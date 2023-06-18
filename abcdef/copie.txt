@@ -1,0 +1,98 @@
+
+.btn-reserve{
+    p
+adding: 10px 20px;
+    background: #bd1ffb;
+   margin-top: -10px;
+   text-transform:uppercase ;
+}
+
+.btn-reserve:hover{
+    background: #bd1ffb;
+    transition: 0.9s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+ul li.active a{
+    background: #fff;
+    color: #000;
+}
+
+
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+
+
+
+
+
+
+    font-weight: 700;
+
+
+
+
+
+
+background: #bd1ffb;
+
+
+background: #2a4963;
+
+
+
+
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+
+
+
+
+
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:3rem;
+}
+.contact .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.contact .box-container .box a{
+    color: var(--light-white);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.contact .box-container .box a i{
+    color:var(--main-color);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+.contact .box-container .box a:hover i{
+    padding-right: .2rem;
+}
+
+
+
+  position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+
+
+
+
+
+<a href="#" class="btn-reserve"onclick="desireMenu();">RECHERCHE</a>

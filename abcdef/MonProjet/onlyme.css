@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: #bd1ffb;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px ;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: 0.9s ease;
+}
+
+.btn-reserve{
+   padding: 10px 20px;
+   background: linear-gradient(135deg, rgb(175, 30, 93), #96aff0);
+   margin-top: -10px;
+   text-transform:uppercase ;
+}
+
+.btn-reserve:hover{
+    background: #bd1ffb;
+    transition: 0.9s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+ul li.active a{
+    background: #fff;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(135deg, rgb(175, 30, 93), #96aff0),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBdoBFPOQ9j-4UFWehNMosIpIjpJnZzhLWA&usqp=CAU);
+    background-position: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+    
+}
+.contact{
+    background: linear-gradient(135deg, rgb(175, 30, 93), #96aff0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:3rem;
+}
+.contact .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.contact .box-container .box a{
+    color: var(--light-white);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.contact .box-container .box a i{
+    color:var(--main-color);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+.contact .box-container .box a:hover i{
+    padding-right: .2rem;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+    color: #000;
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+header.sticky li a:hover{
+    color: #bd1ffb;
+    border-bottom: 2px solid #bd1ffb;
+}
+
+@media (max-width: 991px) {
+header, 
+header.sticky{
+    padding: 10px 20px;
+}
+
+header .navbar li{
+    margin-left: 0px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.navbar{
+    display: none;
+}
+section{
+    padding: 20px;
+}
+
+header .navbar.active{
+    width: 100%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffff;
+    align-items: center;
+}
+
+.desireToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 30px;
+}
+
+.desireToggle.active
+{
+    background-image: url(./images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-origin: center;
+}
+
+header.sticky .menuToggle{
+    filter: invert(1);
+}
+
+
+.banniere .contenu h2{
+    font-size: 2em;
+}
+
+.row .col50 img{
+    margin-left: 18%;
+}
+
+.contenu p:nth-child(2){
+    font-size: 1.2em;
+}
+
+.menu{
+    margin-top: 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.temoignage h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.temoignage p{
+text-align: center;
+}
+
+.contactform{
+    margin-left: 25%;
+}
+
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .banniere .contenu h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+
+    .titre-text{
+        color: #000;
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    .temoignage h2 
+    {
+        font-size: 1.1em;
+    }
+
+    .temoignage p{
+        text-align: center;
+    }
+}
